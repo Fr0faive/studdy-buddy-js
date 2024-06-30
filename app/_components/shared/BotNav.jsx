@@ -34,7 +34,7 @@ export default function BotNav() {
         {listNav.map((data) => (
           <li
             className={`text-3xl ${
-              pathname === data.path && "bg-white p-1 rounded-lg"
+              pathname === data.path ? "bg-white p-1 rounded-lg" : "text-white"
             }`}
             key={data.name}
           >
